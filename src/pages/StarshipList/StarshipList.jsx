@@ -18,16 +18,18 @@ const StarshipList = () => {
     fetchStarships()
   },[])
 
-  console.log(starshipList)
+  if (!starshipList.length) return <h3 className="page-title">Loading your ships...</h3>
 
   return ( 
     <main>
       <h1 className="page-title">You'll need a tray</h1>
-      {/* {starshipList.map(starship => (
-        <div key={starship.id}>
-          <Link />
-        </div>
-      ))} */}
+      <div className="starship-container">
+        {starshipList.map( (starship, idx) => (
+          <Link key={idx} className="starship-card">    
+            {starship.name}
+          </Link>
+        ))}
+      </div>
     </main>
   )
 }

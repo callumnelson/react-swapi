@@ -90,3 +90,21 @@ nav > a:hover {
 .page-title {
   text-align: center;
 }
+
+.starship-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.starship-card {
+  border: 1px solid aquamarine;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
