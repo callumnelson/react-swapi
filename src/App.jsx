@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 //Components
 import NavBar from './components/NavBar/NavBar'
-import StarshipList from './pages/Starships/Starships'
+import StarshipList from './pages/StarshipList/StarshipList'
 
 function App() {
 
