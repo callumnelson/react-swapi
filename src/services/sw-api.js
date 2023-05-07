@@ -27,7 +27,7 @@ export const getStarship = async (starshipId) => {
   return {starship, pilots}
 }
 
-export const getPilots = async (urls) => {
+const getPilots = async (urls) => {
   const promises = urls.map(url => fetch(url).then(res => res.json()))
   const pilotObjects = await Promise.all(promises)
   return pilotObjects
