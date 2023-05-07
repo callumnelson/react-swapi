@@ -25,7 +25,11 @@ const StarshipList = () => {
       <h1 className="page-title">You'll need a tray</h1>
       <div className="starship-container">
         {starshipList.map( (starship, idx) => (
-          <Link key={idx} className="starship-card">    
+          <Link 
+            key={idx} 
+            className="starship-card" 
+            to={`/starships/${starship.url.split('/').slice(-2, -1)}`}
+          >    
             {starship.name}
           </Link>
         ))}
